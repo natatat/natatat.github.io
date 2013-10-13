@@ -13,22 +13,24 @@ div.greeting {
   top:50%;
   left:50%;
   margin-top:-69px;
-  margin-left:-129px;
+  margin-left:-135px;
   text-align: left;
   font-size: 20px;
 }
 
 a:link {
   text-decoration: none;
-  color:blue;
+  color:black;
+  font-family: monaco, courier;
+  font-size: 16px;
 }
 
 a:visited {
-  color:blue;
+  color:black;
 }
 
 a:hover {
-  color:black;
+  background-color:yellow;
   cursor: default;
 }
 
