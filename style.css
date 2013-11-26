@@ -1,6 +1,7 @@
 body {
   margin:0 auto;
   font-family: helvetica-light;
+  font-size:16pt;
 }
 
 div#container {
@@ -12,17 +13,17 @@ div.greeting {
   position:absolute;
   top:50%;
   left:50%;
-  margin-top:-46px;
-  margin-left:-80px;
+  margin-top:-35px;
+  margin-left:-122px;
   text-align: left;
   font-size: 20px;
 }
 
 a:link {
   text-decoration: none;
+  font-size: 1em;
+  background:#f9fc7e;
   color:black;
-  font-family: monaco, courier;
-  font-size: 16px;
 }
 
 a:visited {
@@ -30,9 +31,11 @@ a:visited {
 }
 
 a:hover {
-  background:#f9fc7e;
+  color:black;
+  background:white;
 }
 
 a.linked {
-  font-size: 12px;
+  font-family:monaco, courier;
+  font-size: .6em;
 }
