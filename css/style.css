@@ -1,7 +1,7 @@
 body {
   margin:0 auto;
   font-family: helvetica-light;
-  font-size:16pt;
+  font-size:14pt;
 }
 
 div#container {
@@ -10,7 +10,11 @@ div#container {
 
 div.info {
   margin-top:1em;
-  line-height: 1.4em;
+  line-height:1.4em;
+}
+
+div.code {
+  margin-top:1em;
 }
 
 div.links {
@@ -19,7 +23,8 @@ div.links {
 
 div.images {
   position:absolute;
-  margin-left:20.6em;
+  top:8em;
+  margin-left:21.7em;
   width:30em;
 }
 
@@ -33,7 +38,7 @@ img {
   top:-1em;
   left:17.5em;
   width:15em;
-  line-height: 1.3em;
+  line-height:1.3em;
 }
 
 li {
@@ -41,8 +46,8 @@ li {
 }
 
 a:link {
-  text-decoration: none;
-  font-size: 1em;
+  text-decoration:none;
+  font-size:1em;
   background:#f9fc7e;
   color:black;
 }
@@ -58,7 +63,7 @@ a:hover {
 
 a.linked {
   font-family:monaco, courier;
-  font-size: .6em;
+  font-size:.7em;
 }
 
 a.active {
