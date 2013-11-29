@@ -4,9 +4,8 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/style.css">
   <script src="vendors/jquery.js"></script>
-  <script src="js/pallet.js"></script>
 
-  <title>Natalie Uduwela - site in progress</title>
+  <title>natalieuduwela.com</title>
   <meta name="description" content="I make things."/>
   <meta name="keywords" content="Natalie, Uduwela"/>
   <meta name="author" content="Natalie Uduwela"/>
@@ -29,33 +28,60 @@
       In a previous life, I studied architecture and made <a class="hands" href="#">a lot of things with my hands.</a>
       <br/>I also dabbled in <a href="#">print & graphic design.</a>
       <div class="code">
-        Now, <a href="#">I code things.</a>
+        Now, <a class="code" href="#">I code things.</a>
       </div>
     </div>
-    <div class="images hidden">
-      <img class="img pallet_1" src="images/pallet_1.jpg">
+    <div class="images built hidden">
+      <img class="img pallet_1" src="images/pallet/pallet_1.jpg">
       <span class="left"><</span>
       <a class="nav-back hidden" href="#"><</a>
       <a class="nav-forward" href="#">></a>
       <span class="right hidden">></span>
       <div class="nav-list built">
         <ul>
-          <li><a class="active" href="#">a disaster relief pallet house</a></li>
-          <li><a href="#">sets</a></li>
-          <li><a href="#">books</a></li>
-          <li><a href="#">tanks</a></li>
+          <li><a class="active pallet" href="#">a disaster relief pallet house</a></li>
+          <li><a class="shirts" href="#">shirts</a></li>
+          <li><a class="tanks" href="#">tanks</a><span class="tanks-vid hidden"> <a href="https://www.youtube.com/watch?v=2Ny6Sve3v5s" target="_blank">watch</a></span></li>
+          <li><a class="books" href="#">books</a></li>
         </ul>
       </div>
-      <div class="nav-list design hidden">
-        <ul>
-          <li><a href="#">silkscreened shirts</a></li>
-        </ul>
-      </div>
+    </div>
+    <div class="nav-list design hidden">
+      <ul>
+        <li><a href="#">silkscreened shirts</a></li>
+      </ul>
+    </div>
+    <div class="nav-code hidden">
+      <ul>
+        <li class="dbc">made while at<br/>dev bootcamp:</li>
+        <li><a href="http://noreservations.herokuapp.com" target="_blank">no reservations</a></li>
+        <li><a href="http://gophlix.herokuapp.com" target="_blank">gophlix</a></li>
+        <li><a href="http://typeitout.herokuapp.com" target="_blank">type it out</a></li>
+        <li><a href="http://funniez.herokuapp.com" target="_blank">jokez</a></li>
+      </ul>
+    </div>
+    <div class="contact hidden">
+      you can find me roaming the streets of san francisco,<br/>
+      or reach me at natuduwela@gmail.com
     </div>
   </div>
 
   <div class="footer">
-    <a class="linked" href="http://www.linkedin.com/in/natalieuduwela">linkedin</a>
+    <ul class="foot-nav">
+      <li><a class="bottom-link contact" href="#">contact</a></li>
+      <li><a class="bottom-link" href="http://natatdbc.tumblr.com" target="_blank">blog</a></li>
+      <li><a class="bottom-link" href="http://dl.dropboxusercontent.com/u/36316618/20131129_natalieuduwela.pdf" target="_blank">resume</a></li>
+      <li><a class="bottom-link" href="http://www.linkedin.com/in/natalieuduwela" target="_blank">linkedin</a></li>
+      <li><span class="bottom-link">site in progress.</span></li>
+    </ul>
   </div>
 </body>
+  <script src="js/nav.js"></script>
+  <script src="js/pallet.js"></script>
+  <script src="js/shirts.js"></script>
+  <script src="js/tanks.js"></script>
+  <script src="js/books.js"></script>
+  <script src="js/contact.js"></script>
+  <script src="js/code.js"></script>
+  <script src="js/bind.js"></script>
 </html>

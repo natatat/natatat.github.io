@@ -41,6 +41,17 @@ img {
   line-height:1.3em;
 }
 
+.nav-code {
+  font-size:.9em;
+  line-height:1.4em;
+  padding-left:.6em;
+}
+
+li.dbc {
+  line-height:1.1em;
+  margin-bottom:.2em;
+}
+
 li {
   list-style: none;
 }
@@ -61,7 +72,12 @@ a:hover {
   background:white;
 }
 
-a.linked {
+a.bottom-link {
+  font-family:monaco, courier;
+  font-size:.7em;
+}
+
+span.bottom-link {
   font-family:monaco, courier;
   font-size:.7em;
 }
@@ -71,12 +87,30 @@ a.active {
   cursor:default;
 }
 
+a.actived {
+  background:white;
+}
+
+div.contact {
+  position:absolute;
+  font-size: .8em;
+  bottom:3em;
+  left:1.6em;
+  background: white;
+  padding:1em;
+}
+
 .footer {
-  padding:.8em 0 1em 2em;
+  padding:0 0 1em 0;
   position:fixed;
   width:100%;
-  background-color: white;
+  background: white;
   bottom:0;
+}
+
+.foot-nav > li {
+  float:left;
+  margin-right: 2em;
 }
 
 .hidden {
