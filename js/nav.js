@@ -14,5 +14,9 @@ var Nav = {
   showForward: function(){
     $("a.nav-forward").removeClass("hidden");
     $("span.right").addClass("hidden");
+  },
+  removeHandlers: function(){
+    $("a.nav-forward").unbind();
+    $("a.nav-back").unbind();
   }
 }

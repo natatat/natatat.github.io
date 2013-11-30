@@ -37,7 +37,7 @@ img {
   font-size:.8em;
   top:-1em;
   left:17.5em;
-  width:15em;
+  width:18em;
   line-height:1.3em;
 }
 
@@ -45,6 +45,10 @@ img {
   font-size:.9em;
   line-height:1.4em;
   padding-left:.6em;
+}
+
+li.nav {
+  font-size: 1.5em;
 }
 
 li.dbc {

@@ -1,44 +1,50 @@
 var Shirts = {
   init: function(){
-    $("span.tanks-vid").addClass("hidden");
-
     $("li > a").removeClass("active");
     $("a.shirts").addClass("active");
+
+    $("span.tanks-vid").addClass("hidden");
+    $("span.shirts-nav").removeClass("hidden");
+
+    $("#container").on("click", "a.gcb", Shirts.gcb);
+    $("#container").on("click", "a.sunsout", Shirts.sunsout);
+    $("#container").on("click", "a.turkey", Shirts.turkey);
+
+    Nav.removeHandlers();
+    Shirts.gcb();
+  },
+  gcb: function(){
+    $(".shirts-nav > a").removeClass("active");
+    $("a.gcb").addClass("active");
     $(".img").removeClass().addClass("img gcb_1").attr("src", "images/shirts/gcb_1.jpg");
 
-    $("#container").on("click", "a.nav-forward", Shirts.showNext);
-    $("#container").on("click", "a.nav-back", Shirts.showPrevious);
     Nav.hideBack();
     Nav.showForward();
+    Nav.removeHandlers();
+    $("#container").on("click", "a.nav-forward", Shirts.showGcb2);
   },
-  showNext: function(){
-    var currentImg = $(".img");
-    if ( currentImg.hasClass("gcb_1") ) {
-      currentImg.removeClass("gcb_1").addClass("gcb_2");
-      currentImg.attr("src", "images/shirts/gcb_2.jpg");
-      Nav.showBack();
-    } else if ( currentImg.hasClass("gcb_2") ) {
-      currentImg.removeClass("gcb_2").addClass("sunsout_1");
-      currentImg.attr("src", "images/shirts/sunsout_1.jpg");
-    } else if ( currentImg.hasClass("sunsout_1") ) {
-      currentImg.removeClass("sunsout_1").addClass("turkey_1");
-      currentImg.attr("src", "images/shirts/turkey_1.jpg");
-      Nav.hideForward();
-    }
+  sunsout: function(){
+    $(".shirts-nav > a").removeClass("active");
+    $("a.sunsout").addClass("active");
+    $(".img").removeClass().addClass("img sunsout_1").attr("src", "images/shirts/sunsout_1.jpg");
+    Nav.hideBack();
+    Nav.hideForward();
   },
-  showPrevious: function(){
+  turkey: function(){
+    $(".shirts-nav > a").removeClass("active");
+    $("a.turkey").addClass("active");
+    $(".img").removeClass().addClass("img turkey_1").attr("src", "images/shirts/turkey_1.jpg");
+    Nav.hideBack();
+    Nav.hideForward();
+  },
+  showGcb2: function(){
     var currentImg = $(".img");
-    if ( currentImg.hasClass("gcb_2") ) {
-      currentImg.removeClass("gcb_2").addClass("gcb_1");
-      currentImg.attr("src", "images/shirts/gcb_1.jpg");
-      Nav.hideBack();
-    } else if ( currentImg.hasClass("sunsout_1") ) {
-      currentImg.removeClass("sunsout_1").addClass("gcb_2");
-      currentImg.attr("src", "images/shirts/gcb_2.jpg");
-    } else if ( currentImg.hasClass("turkey_1") ) {
-      currentImg.removeClass("turkey_1").addClass("sunsout_1");
-      currentImg.attr("src", "images/shirts/sunsout_1.jpg");
-      Nav.showForward();
-    }
+    currentImg.removeClass().addClass("img gcb_2");
+    currentImg.attr("src", "images/shirts/gcb_2.jpg");
+
+    Nav.showBack();
+    Nav.hideForward();
+    Nav.removeHandlers();
+    $("#container").on("click", "a.nav-back", Shirts.gcb);
   }
 };
