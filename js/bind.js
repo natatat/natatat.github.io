@@ -18,7 +18,7 @@ function bindEventHandlers(){
 function showBuiltImages(){
   Nav.hideBack();
   Nav.showForward();
-  Nav.removeHandlers();
+  Pallet.init();
   $("#container").on("click", "a.nav-forward", Pallet.show2);
 
   $(".images.design").hide();
@@ -36,7 +36,7 @@ function showBuiltImages(){
 function showDesignImages(){
   Nav.hideBack();
   Nav.showForward();
-  Nav.removeHandlers();
+  DesignShirts.init();
   $("#container").on("click", "a.nav-forward", DesignShirts.showSun);
 
   $(".images.built").hide();
