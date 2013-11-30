@@ -24,7 +24,8 @@ function showBuiltImages(){
   $(".images.design").hide();
   $(".images.built").slideToggle();
   $("a.design").removeClass("actived");
-  // Pallet.init();
+  $("a.code").removeClass("actived");
+  $(".nav-code").slideUp();
 
   var link = $("a.hands");
   if ( link.hasClass("actived") ) {
@@ -43,7 +44,8 @@ function showDesignImages(){
   $(".images.built").hide();
   $(".images.design").slideToggle();
   $("a.hands").removeClass("actived");
-  // DesignShirts.init();
+  $("a.code").removeClass("actived");
+  $(".nav-code").slideUp();
 
   var link = $("a.design");
   if ( link.hasClass("actived") ) {
