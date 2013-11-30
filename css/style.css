@@ -163,13 +163,13 @@ and (max-device-width : 480px) {
 
   div.images {
     position:absolute;
-    top:23em;
+    top:22.5em;
     margin-left:0;
   }
 
   div.images.design {
     position:absolute;
-    top:23em;
+    top:22.5em;
     margin-left:0;
   }
 
@@ -184,24 +184,24 @@ and (max-device-width : 480px) {
   .nav-list {
     position:absolute;
     font-size:1.8em;
-    line-height:1.8em;
-    top:-1em;
-    left:10em;
+    line-height:1.5em;
+    top:0em;
+    left:12em;
   }
 
   .nav-list.design {
     position:absolute;
     font-size:1.8em;
-    line-height:1.8em;
-    top:-1em;
-    left:10em;
+    line-height:1.5em;
+    top:0em;
+    left:12em;
   }
 
   .nav-code {
     font-size:1.5em;
     line-height:1.5em;
     background:white;
-    z-index:1;
+    z-index:2;
   }
 
   div.contact {
