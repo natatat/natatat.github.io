@@ -207,8 +207,8 @@ and (max-device-width : 480px) {
     font-size:1.5em;
     bottom:3em;
     left:1em;
-    background: white;
     padding:1em;
+    z-index:1;
   }
 
   a.bottom-link {
