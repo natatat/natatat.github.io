@@ -154,19 +154,16 @@ and (max-device-width : 480px) {
     margin-top:1em;
     line-height:1.4em;
     font-size:2em;
+    width:100%;
   }
 
   div.images {
-    position:absolute;
-    top:15em;
-    margin-left:15.7em;
+    position:relative;
     width:30em;
   }
 
   div.images.design {
-    position:absolute;
-    top:15em;
-    margin-left:10.7em;
+    position:relative;
     width:30em;
   }
 
@@ -179,21 +176,17 @@ and (max-device-width : 480px) {
   }
 
   .nav-list {
-    position:absolute;
+    position:relative;
     font-size:1.5em;
-    top:-1em;
-    left:17.5em;
     width:20em;
-    line-height:1.8em;
+    line-height:1.5em;
   }
 
   .nav-list.design {
-    position:absolute;
+    position:relative;
     font-size:1.5em;
-    top:-1em;
-    left:23.7em;
     width:20em;
-    line-height:1.8em;
+    line-height:1.5em;
   }
 
   div.contact {
@@ -213,7 +206,7 @@ and (max-device-width : 480px) {
   .footer {
     padding:0 0 1em 0;
     position:fixed;
-    width:480px;
+    width:100%;
     background:white;
     border:none;
     bottom:0;
