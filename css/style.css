@@ -11,6 +11,7 @@ div#container {
 div.info {
   margin-top:1em;
   line-height:1.4em;
+  width:40em;
 }
 
 div.code {
@@ -118,10 +119,14 @@ a.actived {
 div.contact {
   position:absolute;
   font-size:.8em;
-  bottom:3em;
-  left:1.6em;
-  background: white;
+  bottom:2.9em;
+  left:1.5em;
   padding:1em;
+  z-index: 1;
+}
+
+span.contact {
+  background:white;
 }
 
 .footer {
@@ -147,7 +152,7 @@ and (max-device-width : 480px) {
 
   div.contact {
     position:absolute;
-    font-size:2em;
+    font-size:1.5em;
     bottom:3em;
     left:1.6em;
     background: white;
@@ -156,7 +161,7 @@ and (max-device-width : 480px) {
 
   a.bottom-link {
     font-family:monaco, courier;
-    font-size:3em;
+    font-size:2em;
   }
 
   div.images {
