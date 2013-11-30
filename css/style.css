@@ -28,8 +28,19 @@ div.images {
   width:30em;
 }
 
-img {
+div.images.design {
+  position:absolute;
+  top:8em;
+  margin-left:16.7em;
+  width:30em;
+}
+
+.img {
   width:15em;
+}
+
+.d-img {
+  width:20em;
 }
 
 .nav-list {
@@ -37,7 +48,16 @@ img {
   font-size:.8em;
   top:-1em;
   left:17.5em;
-  width:18em;
+  width:20em;
+  line-height:1.3em;
+}
+
+.nav-list.design {
+  position:absolute;
+  font-size:.8em;
+  top:-1em;
+  left:23.7em;
+  width:20em;
   line-height:1.3em;
 }
 
@@ -81,7 +101,7 @@ a.bottom-link {
   font-size:.7em;
 }
 
-span.bottom-link {
+span.bottom {
   font-family:monaco, courier;
   font-size:.7em;
 }
