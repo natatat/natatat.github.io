@@ -150,11 +150,57 @@ span.contact {
 and (min-device-width : 320px)
 and (max-device-width : 480px) {
 
+  div.info {
+    margin-top:1em;
+    line-height:1.4em;
+    font-size:2em;
+  }
+
+  div.images {
+    position:absolute;
+    top:15em;
+    margin-left:15.7em;
+    width:30em;
+  }
+
+  div.images.design {
+    position:absolute;
+    top:15em;
+    margin-left:10.7em;
+    width:30em;
+  }
+
+  .img {
+    width:20em;
+  }
+
+  .d-img {
+    width:25em;
+  }
+
+  .nav-list {
+    position:absolute;
+    font-size:1.5em;
+    top:-1em;
+    left:17.5em;
+    width:20em;
+    line-height:1.8em;
+  }
+
+  .nav-list.design {
+    position:absolute;
+    font-size:1.5em;
+    top:-1em;
+    left:23.7em;
+    width:20em;
+    line-height:1.8em;
+  }
+
   div.contact {
     position:absolute;
     font-size:1.5em;
     bottom:3em;
-    left:1.6em;
+    left:1em;
     background: white;
     padding:1em;
   }
@@ -164,36 +210,13 @@ and (max-device-width : 480px) {
     font-size:2em;
   }
 
-  div.images {
-    position:absolute;
-    top:15em;
-    margin-left:21.7em;
-    width:30em;
-  }
-
-  div.images.design {
-    position:absolute;
-    top:15em;
-    margin-left:16.7em;
-    width:30em;
-  }
-
-  .nav-list {
-    position:absolute;
-    font-size:.8em;
-    top:-1em;
-    left:17.5em;
-    width:20em;
-    line-height:1.3em;
-  }
-
-  .nav-list.design {
-    position:absolute;
-    font-size:.8em;
-    top:-1em;
-    left:23.7em;
-    width:20em;
-    line-height:1.3em;
+  .footer {
+    padding:0 0 1em 0;
+    position:fixed;
+    width:480px;
+    background:white;
+    border:none;
+    bottom:0;
   }
 
 }
