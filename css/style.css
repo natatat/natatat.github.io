@@ -158,12 +158,16 @@ and (max-device-width : 480px) {
   }
 
   div.images {
-    position:relative;
+    position:absolute;
+    left:1em;
+    top:30em;
     width:30em;
   }
 
   div.images.design {
-    position:relative;
+    position:absolute;
+    left:1em;
+    top:30em;
     width:30em;
   }
 
@@ -178,14 +182,17 @@ and (max-device-width : 480px) {
   .nav-list {
     position:relative;
     font-size:1.5em;
-    width:20em;
     line-height:1.5em;
   }
 
   .nav-list.design {
     position:relative;
     font-size:1.5em;
-    width:20em;
+    line-height:1.5em;
+  }
+
+  .nav-code {
+    font-size:1.5em;
     line-height:1.5em;
   }
 
@@ -205,7 +212,7 @@ and (max-device-width : 480px) {
 
   .footer {
     padding:0 0 1em 0;
-    position:fixed;
+    position:absolute;
     width:100%;
     background:white;
     border:none;
