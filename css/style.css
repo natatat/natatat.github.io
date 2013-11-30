@@ -157,12 +157,18 @@ and (max-device-width : 480px) {
     width:100%;
   }
 
+  div.greeting {
+    font-size:2em;
+  }
+
   div.images {
-    position:relative;
+    position:absolute;
+    margin-left:0;
   }
 
   div.images.design {
-    position:relative;
+    position:absolute;
+    margin-left:0;
   }
 
   .img {
