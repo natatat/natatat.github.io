@@ -18,12 +18,13 @@ function bindEventHandlers(){
 function showBuiltImages(){
   Nav.hideBack();
   Nav.showForward();
-  Pallet.init();
+  Nav.removeHandlers();
   $("#container").on("click", "a.nav-forward", Pallet.show2);
 
   $(".images.design").hide();
   $(".images.built").slideToggle();
   $("a.design").removeClass("actived");
+  // Pallet.init();
 
   var link = $("a.hands");
   if ( link.hasClass("actived") ) {
@@ -36,12 +37,13 @@ function showBuiltImages(){
 function showDesignImages(){
   Nav.hideBack();
   Nav.showForward();
-  DesignShirts.init();
+  Nav.removeHandlers();
   $("#container").on("click", "a.nav-forward", DesignShirts.showSun);
 
   $(".images.built").hide();
   $(".images.design").slideToggle();
   $("a.hands").removeClass("actived");
+  // DesignShirts.init();
 
   var link = $("a.design");
   if ( link.hasClass("actived") ) {
