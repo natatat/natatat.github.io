@@ -163,13 +163,13 @@ and (max-device-width : 480px) {
 
   div.images {
     position:absolute;
-    top:20em;
+    top:23em;
     margin-left:0;
   }
 
   div.images.design {
     position:absolute;
-    top:20em;
+    top:23em;
     margin-left:0;
   }
 
@@ -185,14 +185,16 @@ and (max-device-width : 480px) {
     position:absolute;
     font-size:1.5em;
     line-height:1.5em;
-    top:20em;
-    left:10em;
+    top:-1em;
+    left:50em;
   }
 
   .nav-list.design {
     position:absolute;
     font-size:1.5em;
     line-height:1.5em;
+    top:-1em;
+    left:50em;
   }
 
   .nav-code {
