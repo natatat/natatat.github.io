@@ -12,5 +12,22 @@ var Code = {
     } else {
       link.addClass("actived");
     }
+
+    Code.hideGithub();
+  },
+  showGithub: function(){
+    $("a.github").hide();
+    Code.linkNotActive();
+    $(this).closest("li").find("a.github").show();
+  },
+  hideGithub: function(){
+    $("a.github").hide();
+    Code.linkNotActive();
+  },
+  linkActive: function(){
+    $(this).closest("li").find("a.proj-link").addClass("active");
+  },
+  linkNotActive: function(){
+    $("a.proj-link").removeClass("active");
   }
 };

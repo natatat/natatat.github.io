@@ -12,6 +12,10 @@ function bindEventHandlers(){
   $("#container").on("click", "a.d-internship", DesignInternship.init);
 
   $("#container").on("click", "a.code", Code.show);
+  $("#container").on("mouseenter", "a.proj-link", Code.showGithub);
+  $("#container").on("mouseenter", "a.github", Code.linkActive);
+  $("#container").on("mouseleave", "a.github", Code.hideGithub);
+
   $(".footer").on("click", "a.contact", Contact.show);
 };
 

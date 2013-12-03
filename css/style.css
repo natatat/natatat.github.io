@@ -97,6 +97,13 @@ a:hover {
   background:white;
 }
 
+a.github {
+  font-family:monaco, courier;
+  font-size:.7em;
+  background: white;
+  line-height:1.1em;
+}
+
 a.bottom-link {
   font-family:monaco, courier;
   font-size:.7em;
