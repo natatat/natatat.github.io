@@ -135,13 +135,13 @@ span.contact {
   background:white;
 }
 
-.footer {
+/*.footer {
   padding:0 0 1em 0;
   position:fixed;
   width:100%;
   background:white;
   bottom:0;
-}
+}*/
 
 .foot-nav > li {
   float:left;
