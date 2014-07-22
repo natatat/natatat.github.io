@@ -1,0 +1,13 @@
+div#container {
+  padding: 5em !important;
+}
+
+.name {
+    font-size: 2em;
+}
+
+.footer {
+    position: relative;
+    font-size: 1.5em;
+    margin-left: -1.3em;
+}
