@@ -1,3 +1,8 @@
 # natalieuduwela.com
 ***
-My personal website using plain HTML, CSS, & JS. More tweaks to come!
+built with:
+basscss
+js + jquery
+
+also, thanks:
+cdnjs
