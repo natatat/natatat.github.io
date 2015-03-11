@@ -1,3 +1,6 @@
+/*global $*/
+/*global Chart*/
+
 // Get context with jQuery - using jQuery's .get() method.
 var ctx = document.getElementById("chart").getContext("2d"),
     legendHtml = '<ul><% for (var i=0; i<datasets.length; i++) { %><li style=\"background-color:<%=datasets[i].pointColor%>;\"><% if (datasets[i].label) { %><%= datasets[i].label %><% } %></li><% } %></ul>';
