@@ -128,6 +128,6 @@ module.exports = function (grunt) {
 
     grunt.registerTask('compile:dev', ['less', 'browserify:app', 'concat']);
     grunt.registerTask('compile', ['clean', 'less', 'browserify:app', 'concat', 'uglify', 'copy']);
-    grunt.registerTask('server', ['compile:dev', 'concat', 'connect', 'watch']);
+    grunt.registerTask('server', ['compile:dev', 'connect', 'watch']);
     grunt.registerTask('default', ['compile']);
 };
