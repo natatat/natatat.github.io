@@ -5,11 +5,10 @@ node_modules
 
 jslint
 
+src
 build
 css
 
 index.html
 app.js
 mergedAssets.js
-src/app.js
-src/mergedAssets.js
