@@ -39,8 +39,7 @@ module.exports = function (grunt) {
             app: {
                 options: {
                     debug: true,
-                    watch: true,
-                    // transform: [hbsfy]
+                    watch: true
                 },
                 files: {
                     'src/app.js': ['app/app.js']
