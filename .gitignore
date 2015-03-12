@@ -4,11 +4,4 @@ node_modules
 .grunt
 
 jslint
-
 src
-build
-css
-
-index.html
-app.js
-mergedAssets.js
