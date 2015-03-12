@@ -5,7 +5,6 @@ module.exports = {
     run: function () {
         "use strict";
         if (this._prod()) {
-            ga('create', 'UA-36982620-1', 'auto');
             ga('send', 'pageview');
         }
     },
