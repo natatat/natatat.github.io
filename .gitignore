@@ -6,7 +6,10 @@ node_modules
 jslint
 
 build
-src
+css
+
 index.html
 app.js
 mergedAssets.js
+src/app.js
+src/mergedAssets.js
