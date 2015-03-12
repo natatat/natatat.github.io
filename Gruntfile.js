@@ -127,11 +127,12 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-jslint');
 
     grunt.registerTask('compile:dev', ['less', 'browserify:app', 'concat']);
-    grunt.registerTask('compile', ['clean', 'less', 'browserify:app', 'concat', 'uglify']);
+    grunt.registerTask('compile', ['clean', 'less', 'browserify:app', 'concat', 'uglify', 'copy']);
     grunt.registerTask('server', ['compile:dev', 'concat', 'connect', 'watch']);
     grunt.registerTask('default', ['compile']);
 };
