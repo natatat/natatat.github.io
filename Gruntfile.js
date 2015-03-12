@@ -74,7 +74,21 @@ module.exports = function (grunt) {
                 }
             }
         },
-        clean: ["src"],
+        clean: ["build"],
+        copy: {
+            main: {
+                files: [
+                    {expand: false, src: ['src/index.html'], dest: 'build/index.html'},
+                    {expand: false, src: ['src/mergedAssets.js'], dest: 'build/mergedAssets.js'},
+                    {expand: true, cwd: 'public/', src: ['**'], dest: 'build/'},
+                ]
+            },
+            build: {
+                files: [
+                    {expand: true, cwd: 'build/', src: ['**'], dest: './'}
+                ]
+            }
+        },
         jslint: {
             client: {
                 src: [
