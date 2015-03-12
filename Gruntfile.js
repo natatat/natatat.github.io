@@ -60,8 +60,8 @@ module.exports = function (grunt) {
             },
             prod: {
                 files: {
-                    'src/app.js': ['src/app.js'],
-                    'src/mergedAssets.js': ['src/mergedAssets.js']
+                    'build/app.js': ['src/app.js'],
+                    'build/mergedAssets.js': ['src/mergedAssets.js']
                 }
             }
         },
