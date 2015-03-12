@@ -60,8 +60,8 @@ module.exports = function (grunt) {
             },
             prod: {
                 files: {
-                    'build/app.js': ['src/app.js'],
-                    'build/mergedAssets.js': ['src/mergedAssets.js']
+                    'src/app.js': ['src/app.js'],
+                    'src/mergedAssets.js': ['src/mergedAssets.js']
                 }
             }
         },
@@ -74,18 +74,13 @@ module.exports = function (grunt) {
                 }
             }
         },
-        clean: ["build"],
+        clean: ["src", "public/js"],
         copy: {
             main: {
                 files: [
-                    {expand: false, src: ['src/index.html'], dest: 'build/index.html'},
-                    {expand: false, src: ['src/mergedAssets.js'], dest: 'build/mergedAssets.js'},
-                    {expand: true, cwd: 'public/', src: ['**'], dest: 'build/'},
-                ]
-            },
-            build: {
-                files: [
-                    {expand: true, cwd: 'build/', src: ['**'], dest: './'}
+                    {expand: false, src: ['public/index.html'], dest: './index.html'},
+                    {expand: false, src: ['src/app.js'], dest: 'public/js/app.js'},
+                    {expand: false, src: ['src/mergedAssets.js'], dest: 'public/js/mergedAssets.js'}
                 ]
             }
         },
