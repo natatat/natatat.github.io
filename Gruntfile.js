@@ -39,8 +39,7 @@ module.exports = function (grunt) {
             app: {
                 options: {
                     debug: true,
-                    watch: true,
-                    // transform: [hbsfy]
+                    watch: true
                 },
                 files: {
                     'src/app.js': ['app/app.js']
@@ -75,7 +74,16 @@ module.exports = function (grunt) {
                 }
             }
         },
-        clean: ["src"],
+        clean: ["src", "public/js"],
+        copy: {
+            main: {
+                files: [
+                    {expand: false, src: ['public/index.html'], dest: './index.html'},
+                    {expand: false, src: ['src/app.js'], dest: 'public/js/app.js'},
+                    {expand: false, src: ['src/mergedAssets.js'], dest: 'public/js/mergedAssets.js'}
+                ]
+            }
+        },
         jslint: {
             client: {
                 src: [
@@ -114,11 +122,12 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-browserify');
     grunt.loadNpmTasks('grunt-jslint');
 
     grunt.registerTask('compile:dev', ['less', 'browserify:app', 'concat']);
-    grunt.registerTask('compile', ['clean', 'less', 'browserify:app', 'concat', 'uglify']);
-    grunt.registerTask('server', ['compile:dev', 'concat', 'connect', 'watch']);
+    grunt.registerTask('compile', ['clean', 'less', 'browserify:app', 'concat', 'uglify', 'copy']);
+    grunt.registerTask('server', ['compile:dev', 'connect', 'watch']);
     grunt.registerTask('default', ['compile']);
 };
