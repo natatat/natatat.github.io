@@ -74,13 +74,13 @@ module.exports = function (grunt) {
                 }
             }
         },
-        clean: ["src", "public/js"],
+        clean: ["src", "build"],
         copy: {
             main: {
                 files: [
-                    {expand: false, src: ['public/index.html'], dest: './index.html'},
-                    {expand: false, src: ['src/app.js'], dest: 'public/js/app.js'},
-                    {expand: false, src: ['src/mergedAssets.js'], dest: 'public/js/mergedAssets.js'}
+                    {expand: false, src: ['src/css/styles.css'], dest: 'build/css/styles.css'},
+                    {expand: false, src: ['src/css/error.css'], dest: 'build/css/error.css'},
+                    {expand: true, cwd: 'public/', src: ['**'], dest: 'build/'}
                 ]
             }
         },
