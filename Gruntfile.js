@@ -15,8 +15,8 @@ module.exports = function (grunt) {
                     cleancss: grunt.config('production')
                 },
                 files: {
-                    'public/css/styles.css': stylesheetsDir + '/index.less',
-                    'public/css/error.css': stylesheetsDir + '/error.less'
+                    'src/css/styles.css': stylesheetsDir + '/index.less',
+                    'src/css/error.css': stylesheetsDir + '/error.less'
                 }
             }
         },
