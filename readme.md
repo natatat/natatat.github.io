@@ -1,8 +1,1 @@
-# natalieuduwela.com
-***
-built with:
-basscss
-js + jquery
-
-also, thanks:
-cdnjs
+personal site built with: html, less, basscss, browserify, grunt
