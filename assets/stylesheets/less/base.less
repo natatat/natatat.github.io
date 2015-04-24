@@ -4,6 +4,13 @@ body {
 
 a {
     color: black;
+    &:hover {
+        color: @teal;
+    }
+}
+
+.fa {
+    font-size: 1.9em;
 }
 
 /* helpers */
@@ -30,6 +37,13 @@ a {
     padding-bottom: 150px;
 }
 
+@media (max-width: 900px) {
+    .sm-py75 {
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+}
+
 .f-right {
     float: right;
 }
@@ -41,7 +55,9 @@ a {
 .align-right {
     text-align: right;
 }
+/* end helpers */
 
+/* nav */
 .navbar-list {
     list-style: none;
     margin-bottom: 0;
@@ -63,7 +79,7 @@ a {
     float: left;
     margin-bottom: 0;
 }
-/* end helpers */
+/* end nav */
 
 /* font */
 .big {
@@ -81,15 +97,29 @@ a {
     font-size: 3rem;
     line-height: 5rem;
 }
+
+@media (max-width: 900px) {
+    .big {
+        font-size: 4rem;
+        line-height: 1.4;
+        font-weight: 700;
+    }
+
+    .medium {
+        font-size: 2.5rem;
+        line-height: 1.5;
+    }
+
+    .small {
+        font-size: 2rem;
+        line-height: 1.6;
+    }
+}
 /* end font */
 
+/* sections */
 .likes {
-    background-color: #1abc9c;
+    background-color: @teal;
     color: white;
 }
-
-.nav {
-}
-
-.footer {
-}
+/* end sections */
