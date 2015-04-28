@@ -8,6 +8,8 @@ module.exports = {
         if (this._prod()) {
             ga('send', 'pageview');
         }
+
+        this.delegateScrollEvents();
     },
     _prod: function () {
         "use strict";
@@ -15,6 +17,20 @@ module.exports = {
             return true;
         }
         return false;
+    },
+    delegateScrollEvents: function () {
+        $('a.top').on('click', function (event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: '0px'
+            }, 1000);
+        });
+        $('a.bottom').on('click', function (event) {
+            event.preventDefault();
+            $('html, body').animate({
+                scrollTop: $(document).height()
+            }, 1000);
+        });
     }
 };
 
