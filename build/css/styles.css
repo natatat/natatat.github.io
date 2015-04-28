@@ -2550,6 +2550,23 @@ a:hover {
 .fa {
   font-size: 1.9em;
 }
+.circle {
+  font-family: "Helvetica", sans-serif;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  line-height: 30px;
+}
+.circle:hover {
+  cursor: pointer;
+  background-color: #1abc9c;
+}
+.navbar-item {
+  line-height: 30px;
+}
 /* helpers */
 .hide {
   display: none;
@@ -2564,16 +2581,6 @@ a:hover {
 .py100 {
   padding-top: 100px;
   padding-bottom: 100px;
-}
-.py150 {
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-@media (max-width: 900px) {
-  .sm-py75 {
-    padding-top: 75px;
-    padding-bottom: 75px;
-  }
 }
 .f-right {
   float: right;
@@ -2615,7 +2622,36 @@ a:hover {
   font-size: 3rem;
   line-height: 5rem;
 }
+/* end font */
+/* sections */
+.container {
+  font-family: "Libre Baskerville", serif;
+}
+.nav {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  position: fixed;
+  min-width: 100%;
+  background: white;
+  z-index: 1;
+}
+.intro {
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+.likes {
+  background-color: #1abc9c;
+  color: white;
+}
+/* end sections */
 @media (max-width: 900px) {
+  /* helpers */
+  .sm-py75 {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  /* end helpers */
+  /* font */
   .big {
     font-size: 4rem;
     line-height: 1.4;
@@ -2629,14 +2665,11 @@ a:hover {
     font-size: 2rem;
     line-height: 1.6;
   }
+  /* end font */
+  /* sections */
+  .intro {
+    padding-top: 125px;
+    padding-bottom: 75px;
+  }
+  /* end sections */
 }
-/* end font */
-/* sections */
-.container {
-  font-family: "Libre Baskerville", serif;
-}
-.likes {
-  background-color: #1abc9c;
-  color: white;
-}
-/* end sections */
