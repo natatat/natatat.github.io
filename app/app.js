@@ -1,3 +1,4 @@
+/*global $*/
 /*global ga*/
 /*global window*/
 
