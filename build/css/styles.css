@@ -2564,9 +2564,6 @@ a:hover {
   cursor: pointer;
   background-color: #1abc9c;
 }
-.navbar-item {
-  line-height: 30px;
-}
 /* helpers */
 .hide {
   display: none;
