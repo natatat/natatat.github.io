@@ -13,6 +13,20 @@ a {
     font-size: 1.9em;
 }
 
+.circle {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 30px;
+    min-width: 30px;
+    min-height: 30px;
+    line-height: 30px;
+    &:hover {
+        cursor: pointer;
+        background-color: @teal;
+    }
+}
+
 /* helpers */
 .hide {
     display: none;
@@ -39,7 +53,7 @@ a {
 
 @media (max-width: 900px) {
     .sm-py75 {
-        padding-top: 75px;
+        padding-top: 125px;
         padding-bottom: 75px;
     }
 }
