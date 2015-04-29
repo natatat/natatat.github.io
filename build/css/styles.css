@@ -2552,7 +2552,7 @@ a:hover {
 }
 .circle {
   font-family: "Helvetica", sans-serif;
-  background-color: #333;
+  background-color: #1abc9c;
   color: white;
   text-align: center;
   border-radius: 30px;
@@ -2561,8 +2561,7 @@ a:hover {
   line-height: 30px;
 }
 .circle:hover {
-  cursor: pointer;
-  background-color: #1abc9c;
+  cursor: default;
 }
 /* helpers */
 .hide {
@@ -2624,7 +2623,7 @@ a:hover {
 .container {
   font-family: "Libre Baskerville", serif;
 }
-.nav {
+#nav {
   padding-top: 25px;
   padding-bottom: 25px;
   position: fixed;
@@ -2632,11 +2631,11 @@ a:hover {
   background: white;
   z-index: 1;
 }
-.intro {
+#intro {
   padding-top: 200px;
   padding-bottom: 150px;
 }
-.likes {
+#likes {
   background-color: #1abc9c;
   color: white;
 }
@@ -2664,7 +2663,7 @@ a:hover {
   }
   /* end font */
   /* sections */
-  .intro {
+  #intro {
     padding-top: 125px;
     padding-bottom: 75px;
   }
