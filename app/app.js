@@ -9,7 +9,7 @@ module.exports = {
             ga('send', 'pageview');
         }
 
-        this.scrollEvents().delegate();
+        this.delegateScrollEvents();
     },
     _prod: function () {
         "use strict";
@@ -18,7 +18,7 @@ module.exports = {
         }
         return false;
     },
-    scrollEvents: function () {
+    delegateScrollEvents: function () {
         "use strict";
         var resetCaret = function () {
                 $('a.next').prop('href', '#likes');
@@ -32,9 +32,8 @@ module.exports = {
                     $('a.next').addClass('hide');
                     $('a.top').removeClass('hide');
                 }
-            };
-        return {
-            delegate: function () {
+            },
+            registerEvents = function () {
                 $(document).on('scroll', function () {
                     if ($(window).scrollTop() === 0) {
                         resetCaret();
@@ -50,7 +49,7 @@ module.exports = {
                     }, 1000, function () {
                         resetCaret();
                     });
-                }.bind(this));
+                });
 
                 $('a.next').on('click', function (event) {
                     event.preventDefault();
@@ -62,8 +61,9 @@ module.exports = {
                         setNextSection(target);
                     });
                 });
-            }
-        };
+            };
+
+        registerEvents();
     }
 };
 
