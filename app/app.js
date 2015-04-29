@@ -42,13 +42,18 @@ module.exports = {
                     }
                 });
 
+                $('.circle').on('click', function (event) {
+                    event.preventDefault();
+                    $('html, body').animate({
+                        scrollTop: '0px'
+                    }, 500);
+                });
+
                 $('a.top').on('click', function (event) {
                     event.preventDefault();
                     $('html, body').animate({
                         scrollTop: '0px'
-                    }, 1000, function () {
-                        resetCaret();
-                    });
+                    }, 1000, resetCaret);
                 });
 
                 $('a.next').on('click', function (event) {
