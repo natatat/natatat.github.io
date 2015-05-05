@@ -2570,6 +2570,9 @@ a:hover {
 .libre-baskerville {
   font-family: "Libre Baskerville", serif;
 }
+.white {
+  color: white;
+}
 .py25 {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -2577,6 +2580,9 @@ a:hover {
 .py100 {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.pb20 {
+  padding-bottom: 20px;
 }
 .f-right {
   float: right;
@@ -2597,11 +2603,15 @@ a:hover {
   margin-left: 35px;
 }
 .navbar-list.f-left .navbar-item {
+  margin-left: 10px;
+}
+.navbar-list.f-left .navbar-item {
   margin-right: 35px;
 }
 .navbar-item {
   float: left;
   margin-bottom: 0;
+  line-height: 30px;
 }
 /* end nav */
 /* font */
@@ -2617,6 +2627,13 @@ a:hover {
 .small {
   font-size: 3rem;
   line-height: 5rem;
+}
+.smaller {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.header {
+  margin-bottom: 40px;
 }
 /* end font */
 /* sections */
@@ -2640,6 +2657,80 @@ a:hover {
   color: white;
 }
 /* end sections */
+.title {
+  text-decoration: none;
+}
+.design .circle:hover,
+.dev .circle:hover,
+.more .circle:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+.design #digital,
+.dev #digital,
+.more #digital {
+  padding-top: 80px;
+  padding-bottom: 0px;
+}
+.design.dev #main,
+.dev.dev #main,
+.more.dev #main {
+  padding-top: 100px;
+  padding-bottom: 25px;
+}
+.design.dev #main .fa,
+.dev.dev #main .fa,
+.more.dev #main .fa {
+  font-size: 1em;
+  padding-left: 15px;
+}
+.design.more #nav .navbar-list.f-right .navbar-item,
+.dev.more #nav .navbar-list.f-right .navbar-item,
+.more.more #nav .navbar-list.f-right .navbar-item {
+  margin-left: 50px;
+}
+.design.more #nav .navbar-list.f-right .navbar-item:hover,
+.dev.more #nav .navbar-list.f-right .navbar-item:hover,
+.more.more #nav .navbar-list.f-right .navbar-item:hover {
+  cursor: pointer;
+}
+.design.more #nav .navbar-list.f-right .navbar-item a.nav-link,
+.dev.more #nav .navbar-list.f-right .navbar-item a.nav-link,
+.more.more #nav .navbar-list.f-right .navbar-item a.nav-link {
+  text-decoration: none;
+}
+.design.more #print,
+.dev.more #print,
+.more.more #print {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #1abc9c;
+}
+.design.more #built,
+.dev.more #built,
+.more.more #built {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.design.more #worn,
+.dev.more #worn,
+.more.more #worn {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #1abc9c;
+}
+@media (min-width: 550px) {
+  .column,
+  .columns {
+    margin-left: 1%;
+  }
+  .six.columns {
+    width: 49.5%;
+  }
+  .four.columns {
+    width: 32.6666666667%;
+  }
+}
 @media (max-width: 900px) {
   /* helpers */
   .sm-py75 {
@@ -2661,6 +2752,10 @@ a:hover {
     font-size: 2rem;
     line-height: 1.6;
   }
+  .smaller {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
   /* end font */
   /* sections */
   #intro {
@@ -2676,6 +2771,9 @@ a:hover {
     display: none;
   }
   .top {
+    display: none;
+  }
+  .sm-hide {
     display: none;
   }
 }
