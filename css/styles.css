@@ -2661,63 +2661,53 @@ a:hover {
   text-decoration: none;
 }
 .design .circle:hover,
-.dev .circle:hover,
-.more .circle:hover {
+.dev .circle:hover {
   background-color: #333;
   cursor: pointer;
 }
 .design #digital,
-.dev #digital,
-.more #digital {
-  padding-top: 80px;
-  padding-bottom: 0px;
+.dev #digital {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 .design.dev #main,
-.dev.dev #main,
-.more.dev #main {
+.dev.dev #main {
   padding-top: 100px;
   padding-bottom: 25px;
 }
 .design.dev #main .fa,
-.dev.dev #main .fa,
-.more.dev #main .fa {
+.dev.dev #main .fa {
   font-size: 1em;
   padding-left: 15px;
 }
-.design.more #nav .navbar-list.f-right .navbar-item,
-.dev.more #nav .navbar-list.f-right .navbar-item,
-.more.more #nav .navbar-list.f-right .navbar-item {
+.design.design #nav .navbar-list.f-right .navbar-item,
+.dev.design #nav .navbar-list.f-right .navbar-item {
   margin-left: 50px;
 }
-.design.more #nav .navbar-list.f-right .navbar-item:hover,
-.dev.more #nav .navbar-list.f-right .navbar-item:hover,
-.more.more #nav .navbar-list.f-right .navbar-item:hover {
+.design.design #nav .navbar-list.f-right .navbar-item:hover,
+.dev.design #nav .navbar-list.f-right .navbar-item:hover {
   cursor: pointer;
 }
-.design.more #nav .navbar-list.f-right .navbar-item a.nav-link,
-.dev.more #nav .navbar-list.f-right .navbar-item a.nav-link,
-.more.more #nav .navbar-list.f-right .navbar-item a.nav-link {
+.design.design #nav .navbar-list.f-right .navbar-item a.nav-link,
+.dev.design #nav .navbar-list.f-right .navbar-item a.nav-link {
   text-decoration: none;
 }
-.design.more #print,
-.dev.more #print,
-.more.more #print {
+.design.design #print,
+.dev.design #print {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #1abc9c;
 }
-.design.more #built,
-.dev.more #built,
-.more.more #built {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.design.more #worn,
-.dev.more #worn,
-.more.more #worn {
+.design.design #built,
+.dev.design #built {
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: #1abc9c;
+}
+.design.design #worn,
+.dev.design #worn {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 @media (min-width: 550px) {
   .column,
