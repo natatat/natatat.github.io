@@ -1,30 +1,8 @@
-#nav {
-    .navbar-list.f-left {
-        .navbar-item {
-            margin-left: 10px;
-        }
-    }
-}
-
 .title {
     text-decoration: none;
 }
 
-.design {
-    .circle {
-        &:hover {
-            background-color: #333;
-            cursor: pointer;
-        }
-    }
-
-    #digital {
-        padding-top: 80px;
-        padding-bottom: 0px;
-    }
-}
-
-.dev {
+.design, .dev, .more {
     .circle {
         &:hover {
             background-color: #333;
@@ -37,55 +15,48 @@
         padding-bottom: 0px;
     }
 
-    #main {
-        padding-top: 80px;
-        padding-bottom: 0px;
+    &.dev {
+        #main {
+            padding-top: 100px;
+            padding-bottom: 25px;
 
-        .fa {
-            font-size: 1em;
-            padding-left: 15px;
-        }
-    }
-
-}
-
-.more {
-
-    .circle {
-        &:hover {
-            background-color: #333;
-            cursor: pointer;
-        }
-    }
-
-    #nav {
-        .navbar-list.f-right {
-            .navbar-item {
-                margin-left: 50px;
-                &:hover {
-                    cursor: pointer;
-                }
-                a.nav-link {
-                    text-decoration: none;
-                }
+            .fa {
+                font-size: 1em;
+                padding-left: 15px;
             }
         }
     }
 
-    #print {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        background-color: @teal;
-    }
+    &.more {
+        #nav {
+            .navbar-list.f-right {
+                .navbar-item {
+                    margin-left: 50px;
+                    &:hover {
+                        cursor: pointer;
+                    }
+                    a.nav-link {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
 
-    #built {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
+        #print {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: @teal;
+        }
 
-    #worn {
-        padding-top: 50px;
-        padding-bottom: 50px;
-        background-color: @teal;
+        #built {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        #worn {
+            padding-top: 50px;
+            padding-bottom: 50px;
+            background-color: @teal;
+        }
     }
 }
