@@ -82,6 +82,11 @@ module.exports = function (grunt) {
                     {expand: false, src: ['src/css/error.css'], dest: 'build/css/error.css'},
                     {expand: true, cwd: 'public/', src: ['**'], dest: 'build/'}
                 ]
+            },
+            build: {
+                files: [
+                    {expand: true, cwd: 'build/', src: ['**'], dest: './'}
+                ]
             }
         },
         jslint: {
@@ -127,7 +132,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-jslint');
 
     grunt.registerTask('compile:dev', ['less', 'browserify:app', 'concat']);
-    grunt.registerTask('compile', ['clean', 'less', 'browserify:app', 'concat', 'uglify', 'copy']);
+    grunt.registerTask('compile', ['clean', 'less', 'browserify:app', 'concat', 'uglify', 'copy:main', 'copy:build']);
     grunt.registerTask('server', ['compile:dev', 'connect', 'watch']);
     grunt.registerTask('default', ['compile']);
 };
