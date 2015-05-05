@@ -1,1 +1,1 @@
-personal site built with: html, less, basscss, browserify, grunt
+personal site built with: html, less, <a href="http://getskeleton.com/">skeleton</a>'s grid, browserify, grunt
