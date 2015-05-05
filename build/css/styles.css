@@ -2730,6 +2730,9 @@ a:hover {
   .four.columns {
     width: 32.6666666667%;
   }
+  .eight.columns {
+    width: 66.333333334%;
+  }
 }
 @media (max-width: 900px) {
   /* helpers */
