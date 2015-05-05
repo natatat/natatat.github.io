@@ -2,17 +2,12 @@
     text-decoration: none;
 }
 
-.design, .dev, .more {
+.design, .dev {
     .circle {
         &:hover {
             background-color: #333;
             cursor: pointer;
         }
-    }
-
-    #digital {
-        padding-top: 80px;
-        padding-bottom: 0px;
     }
 
     &.dev {
@@ -27,7 +22,7 @@
         }
     }
 
-    &.more {
+    &.design {
         #nav {
             .navbar-list.f-right {
                 .navbar-item {
@@ -48,15 +43,20 @@
             background-color: @teal;
         }
 
+        #digital {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
         #built {
             padding-top: 50px;
             padding-bottom: 50px;
+            background-color: @teal;
         }
 
         #worn {
             padding-top: 50px;
             padding-bottom: 50px;
-            background-color: @teal;
         }
     }
 }
