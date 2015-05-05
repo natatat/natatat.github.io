@@ -8,8 +8,7 @@ module.exports = {
         if (this._prod()) {
             ga('send', 'pageview');
         }
-
-        this.delegateScrollEvents();
+        this.delegateEvents();
     },
     _prod: function () {
         "use strict";
@@ -18,7 +17,7 @@ module.exports = {
         }
         return false;
     },
-    delegateScrollEvents: function () {
+    delegateEvents: function () {
         "use strict";
         var resetCaret = function () {
                 $('a.next').prop('href', '#likes');
@@ -33,7 +32,7 @@ module.exports = {
                     $('a.top').removeClass('hide');
                 }
             },
-            registerEvents = function () {
+            indexEvents = function () {
                 $(document).on('scroll', function () {
                     if ($(window).scrollTop() === 0) {
                         resetCaret();
@@ -43,10 +42,12 @@ module.exports = {
                 });
 
                 $('.circle').on('click', function (event) {
-                    event.preventDefault();
-                    $('html, body').animate({
-                        scrollTop: '0px'
-                    }, 500);
+                    if (!($(event.target).hasClass('portfolio'))) {
+                        event.preventDefault();
+                        $('html, body').animate({
+                            scrollTop: '0px'
+                        }, 500);
+                    }
                 });
 
                 $('a.top').on('click', function (event) {
@@ -66,6 +67,42 @@ module.exports = {
                         setNextSection(target);
                     });
                 });
+            },
+            designEvents = function () {
+                if ($('body').hasClass('design') || $('body').hasClass('more')) {
+                    $('.title').on('mouseenter', function (event) {
+                        $('.title').html('a development portfolio');
+                    });
+                    $('.title').on('mouseleave', function (event) {
+                        $('.title').html('a design portfolio');
+                    });
+                }
+            },
+            devEvents = function () {
+                if ($('body').hasClass('dev')) {
+                    $('.title').on('mouseenter', function (event) {
+                        $('.title').html('a design portfolio');
+                    });
+                    $('.title').on('mouseleave', function (event) {
+                        $('.title').html('a development portfolio');
+                    });
+                }
+            },
+            moreEvents = function () {
+                $('.nav-link').on('click', function (event) {
+                    event.preventDefault();
+                    var navHeight = $('#nav').outerHeight(),
+                        target = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(target).offset().top - navHeight
+                    }, 1000);
+                });
+            },
+            registerEvents = function () {
+                indexEvents();
+                designEvents();
+                devEvents();
+                moreEvents();
             };
 
         registerEvents();
