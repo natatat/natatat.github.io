@@ -1,5 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic);
 /* fonts */
+@font-face {
+  font-family: "ArnoldRegular";
+  src: url('../fonts/Arnold-Regular.woff2') format('woff2'), url('../fonts/Arnold-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: "ArnoldItalic";
+  src: url('../fonts/Arnold-Italic.woff2') format('woff2'), url('../fonts/Arnold-Italic.woff') format('woff');
+}
 /* vendors */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
@@ -2538,14 +2546,6 @@ there.
   content: "\f20c";
 }
 /* General variables */
-@font-face {
-  font-family: "ArnoldRegular";
-  src: url('../fonts/Arnold-Regular.woff2') format('woff2'), url('../fonts/Arnold-Regular.woff') format('woff');
-}
-@font-face {
-  font-family: "ArnoldItalic";
-  src: url('../fonts/Arnold-Italic.woff2') format('woff2'), url('../fonts/Arnold-Italic.woff') format('woff');
-}
 body {
   font-family: sans-serif;
 }
