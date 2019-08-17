@@ -2538,17 +2538,26 @@ there.
   content: "\f20c";
 }
 /* General variables */
+@font-face {
+  font-family: "ArnoldRegular";
+  src: url('../fonts/Arnold-Regular.woff2') format('woff2'), url('../fonts/Arnold-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: "ArnoldItalic";
+  src: url('../fonts/Arnold-Italic.woff2') format('woff2'), url('../fonts/Arnold-Italic.woff') format('woff');
+}
 body {
   font-family: sans-serif;
 }
 a {
   color: black;
   text-decoration: none;
-  border-bottom: 2px solid black;
+  border-bottom: 1px solid black;
+  padding-bottom: 2px;
 }
 a:hover {
-  color: #1abc9c;
-  border-bottom: 2px solid #1abc9c;
+  color: black;
+  font-family: "ArnoldItalic";
 }
 a.no-underline {
   border-bottom: none;
@@ -2578,6 +2587,12 @@ a.no-underline {
 }
 .libre-baskerville {
   font-family: "Libre Baskerville", serif;
+}
+.arnold-regular {
+  font-family: "ArnoldRegular";
+}
+.arnold-italic {
+  font-family: "ArnoldItalic";
 }
 .white {
   color: white;
@@ -2612,9 +2627,6 @@ a.no-underline {
   margin-left: 35px;
 }
 .navbar-list.f-left .navbar-item {
-  margin-left: 10px;
-}
-.navbar-list.f-left .navbar-item {
   margin-right: 35px;
 }
 .navbar-item {
@@ -2641,13 +2653,17 @@ a.no-underline {
   font-size: 2rem;
   line-height: 3rem;
 }
+.smallest {
+  font-size: 1rem;
+  line-height: 2rem;
+}
 .header {
   margin-bottom: 40px;
 }
 /* end font */
 /* sections */
 .container {
-  font-family: "Libre Baskerville", serif;
+  font-family: "ArnoldRegular";
 }
 #nav {
   padding-top: 25px;
@@ -2659,7 +2675,6 @@ a.no-underline {
 }
 #intro {
   padding-top: 200px;
-  padding-bottom: 150px;
 }
 #likes {
   background-color: #1abc9c;
