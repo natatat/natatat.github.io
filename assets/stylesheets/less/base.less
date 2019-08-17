@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "ArnoldRegular";
+  src: url('../fonts/Arnold-Regular.woff2') format('woff2'),
+       url('../fonts/Arnold-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: "ArnoldItalic";
+  src: url('../fonts/Arnold-Italic.woff2') format('woff2'),
+       url('../fonts/Arnold-Italic.woff') format('woff');
+}
+
 body {
     font-family: sans-serif;
 }
@@ -5,10 +17,11 @@ body {
 a {
     color: black;
     text-decoration: none;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
     &:hover {
-        color: @teal;
-        border-bottom: 2px solid @teal;
+        color: black;
+        .arnold-italic;
     }
     &.no-underline {
       border-bottom: none;
@@ -46,6 +59,14 @@ a {
 
 .libre-baskerville {
     font-family: "Libre Baskerville", serif;
+}
+
+.arnold-regular {
+    font-family: "ArnoldRegular";
+}
+
+.arnold-italic {
+    font-family: "ArnoldItalic";
 }
 
 .white {
@@ -93,7 +114,7 @@ a {
 
     &.f-left {
         .navbar-item {
-            margin-left: 10px;
+            // margin-left: 10px;
         }
     }
 
@@ -133,6 +154,11 @@ a {
     line-height: 3rem;
 }
 
+.smallest {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
 .header {
     margin-bottom: 40px;
 }
@@ -140,7 +166,7 @@ a {
 
 /* sections */
 .container {
-    .libre-baskerville;
+    .arnold-regular;
 }
 
 #nav {
@@ -154,7 +180,6 @@ a {
 
 #intro {
     padding-top: 200px;
-    padding-bottom: 150px;
 }
 
 #likes {
